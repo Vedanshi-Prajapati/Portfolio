@@ -13,19 +13,19 @@ button{
     padding: 10px;
  
 }
-nav{
+.nav{
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.591);
     border-radius: 0 0 20px 20px;
-    width:auto
+    width:auto;
 }   
-nav a{
+.nav a{
     color: white;
     text-decoration: none;
     margin: 20px;
 }
-nav a:hover{
+.nav a:hover{
     text-shadow: rgb(255, 255, 255) 0 0 12px;
     color: rgb(255, 255, 255);
 }
@@ -44,7 +44,7 @@ nav a:hover{
 }
 .right{
     width: 50%;     
-    flex:1;
+    flex: 1;
     padding: 50px;
 }
 img{
