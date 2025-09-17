@@ -2,9 +2,13 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     color:rgba(255, 255, 255, 0.591);
+    
 }
 h1{
+    font-size: 50px;
     color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(25,117,181,0.2), 0 0 20px #fff2;
 }
 button{
     font-size: large;
@@ -58,6 +62,124 @@ p{
 p:hover{
     color: white;
 }
-h1:hover{
+.second{
+    background-color: seashell;
+    text-align: center;
+    padding: 50px;
+    color:black;
+}
+.second p{
+    font-size: 25px;
+    line-height: 1.8;
+    width: 60%;
+    margin: auto;
+}   
+.second p:hover{
+    color: rgb(2, 172, 73);
+}
+.projects{
+    text-align: center;
+    padding: 50px;
+}
+.projects h1{
+    font-size: 40px;
+}
+.projects p{
+    font-size: 25px;
+    line-height: 1.8;
+    width: 60%;
+    margin: auto;
+}   
+.projects p:hover{
+    color: white;
+}
+.contact{
+    text-align: center;
+    padding: 50px;
+}
+.contact h1{
+    font-size: 40px;
+}
+.contact p{
+    font-size: 25px;
+    line-height: 1.8;
+    width: 60%;
+    margin: auto;
+}   
+.contact p:hover{
+    color: white;
+}
+.card{
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.591);
+    border-radius: 10px;
+    text-align: left;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card h2{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.card p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(25, 95, 181);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.card a:hover{
+    background-color: white;
     color: rgb(25, 95, 181);
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+    background-color: seashell;
+    color:black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.591);
+    border-radius: 5px;
+    font-size: 16px;
+}
+@media (max-width: 1024px) {
+    h1 { font-size: 40px; }
+    .projects h1, .contact h1 { font-size: 30px; }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    img { width: 90%; max-width: 300px; }
+    input, textarea { width: 80%; }
+    .nav a { display: block; margin: 10px 0; }
 }
