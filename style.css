@@ -1,116 +1,141 @@
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
-    color:rgba(255, 255, 255, 0.591);
-    
+    color: rgba(255, 255, 255, 0.591);
+    margin: 0;
+    padding: 0;
 }
-h1{
-    font-size: 50px;
+h1 {
+    font-size: 3rem;
     color: white;
     letter-spacing: 2px;
     text-shadow: 2px 2px 8px rgba(25,117,181,0.2), 0 0 20px #fff2;
 }
-button{
-    font-size: large;
+h2 {
+    font-size: 2rem;
+}
+button {
+    font-size: 1rem;
     color: white;
     background-color: rgb(25, 95, 181);
-    padding: 10px;
- 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.nav{
+button:hover {
+    background-color: white;
+    color: rgb(25, 95, 181);
+}
+.nav {
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.591);
     border-radius: 0 0 20px 20px;
-    width:auto;
-}   
-.nav a{
+}
+.nav a {
     color: white;
     text-decoration: none;
     margin: 20px;
 }
-.nav a:hover{
-    text-shadow: rgb(255, 255, 255) 0 0 12px;
-    color: rgb(255, 255, 255);
+.nav a:hover {
+    text-shadow: 0 0 12px white;
 }
-.container{
+.container {
     width: 100%;
     display: flex;
     justify-content: center;    
     align-items: center;
     margin-top: 50px;   
-
 }
-.left{
+.left, .right {
     width: 50%;
-    flex:1;
-    padding: 50px;
-}
-.right{
-    width: 50%;     
     flex: 1;
     padding: 50px;
 }
-img{
+img {
     width: 80%;
     border-radius: 50%;
-}   
-p{
-    font-size: 20px;
+}
+p {
+    font-size: 1.25rem;
     line-height: 1.6;
 }
-p:hover{
-    color: white;
-}
-.second{
+p:hover { color: white; }
+.second {
     background-color: seashell;
     text-align: center;
     padding: 50px;
+    color: black;
+}
+.second p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    width: 60%;
+    margin: auto;
+}
+.second h1 {
     color:black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-.second p{
-    font-size: 25px;
+.second p:hover { color: rgb(2, 172, 73); }
+
+.projects {
+    width: 100%;
+    display: flex;               
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;                   
+    text-align: left;             
+}
+
+.projects .left, 
+.projects .right {
+    flex: 1;
+    width: 50%;
+    padding: 20px;
+    border-radius: 0;            
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.projects p {
+    font-size: 1.5rem;
     line-height: 1.8;
-    width: 60%;
-    margin: auto;
-}   
-.second p:hover{
-    color: rgb(2, 172, 73);
+    margin-bottom: 20px;
+    width: 100%;                  
 }
-.projects{
+.projects p:hover { color: white; }
+.projects .left, 
+.projects .right {
+    width: 50%;
+    border-radius: 0%;
+    flex: 1;
+    padding: 20px;
+}
+
+.contact {
     text-align: center;
     padding: 50px;
 }
-.projects h1{
-    font-size: 40px;
+.contact h1 {
+    font-size: 2.5rem;
 }
-.projects p{
-    font-size: 25px;
+.contact p {
+    font-size: 1.5rem;
     line-height: 1.8;
     width: 60%;
     margin: auto;
-}   
-.projects p:hover{
-    color: white;
 }
-.contact{
-    text-align: center;
-    padding: 50px;
-}
-.contact h1{
-    font-size: 40px;
-}
-.contact p{
-    font-size: 25px;
-    line-height: 1.8;
-    width: 60%;
-    margin: auto;
-}   
-.contact p:hover{
-    color: white;
-}
-.card{
-    display: inline-block;
+.contact p:hover { color: white; }
+.card {
+    
     width: 300px;
     margin: 20px;
     padding: 20px;
@@ -118,74 +143,107 @@ p:hover{
     border-radius: 10px;
     text-align: left;
 }
-.card img{
+.card img {
     width: 100%;
     border-radius: 10px;
 }
-.card h2{
-    font-size: 24px;
+.card h2 {
+    font-size: 1.5rem; 
     margin: 10px 0;
 }
-.card p{
-    font-size: 16px;
+.card p {
+    font-size: 1rem;
     line-height: 1.5;
 }
-.card a{
-    display: inline-block;
+.card a {
+    
     margin-top: 10px;
     padding: 10px 15px;
     background-color: rgb(25, 95, 181);
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
-.card a:hover{
+.card a:hover {
     background-color: white;
     color: rgb(25, 95, 181);
 }
-.footer{
+.footer {
     text-align: center;
     padding: 10px;
     border-radius: 20px 20px 0 0;
     margin-top: 50px;
     background-color: seashell;
-    color:black;
+    color: black;
 }
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-input, textarea{
+input, textarea {
     width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid rgba(255, 255, 255, 0.591);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(25, 95, 181);
+    box-shadow: 0 0 5px rgb(25, 95, 181);
 }
 @media (max-width: 1024px) {
-    h1 { font-size: 40px; }
-    .projects h1, .contact h1 { font-size: 30px; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+    p  { font-size: 1.125rem; }
+    .projects h1, .contact h1 { font-size: 1.875rem; }
 }
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .left, .right {
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-    img { width: 90%; max-width: 300px; }
-    input, textarea { width: 80%; }
-    .nav a { display: block; margin: 10px 0; }
-    .body{
-        overflow-x: hidden;
-    }
-    .second{
-        font-size: 20px;
-    }
+@media (max-width: 767px) {
+.container {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
 }
+.left, .right {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.projects {
+    flex-direction: column;
+    text-align: center;
+}
+.projects img {
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+img { 
+    width: 90%; max-width: 300px; 
+}
+input, textarea { 
+    width: 80%; 
+}
+.nav a { 
+    display: block; margin: 10px 0; 
+}
+body { 
+    overflow-x: hidden; 
+}
+h1 { 
+    font-size: 2rem; 
+}
+h2 { 
+    font-size: 1.5rem; 
+}
+p  { 
+    font-size: 1rem; 
+}
+.second { 
+    font-size: 1.25rem; 
+}
+}
+
